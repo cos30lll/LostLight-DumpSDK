@@ -4,7 +4,7 @@
 
 [浏览 87 个分包](dump/packages/README.md) · [查看全部字段的命名来源](data/field-names.tsv) · [查看反射类型的命名来源](data/reflected-type-names.tsv) · [下载源码 ZIP](https://github.com/cos30lll/LostLight-DumpSDK/archive/refs/heads/main.zip)
 
-## SDK 里的名字从哪里来
+## SDK 里的名字从哪里来(完全由中转站https://ecmod.zhake.win许愿生成的数据)
 
 | 你看到的名字 | 来源与读法 |
 | --- | --- |
