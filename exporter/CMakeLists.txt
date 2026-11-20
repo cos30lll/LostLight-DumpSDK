@@ -1,0 +1,3 @@
+add_executable(messiah_offline_export offline_export.cpp snapshot_json.cpp)
+target_compile_features(messiah_offline_export PRIVATE cxx_std_17)
+target_link_libraries(messiah_offline_export PRIVATE lostlight_dumpsdk)

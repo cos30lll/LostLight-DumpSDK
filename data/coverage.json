@@ -1,0 +1,45 @@
+{
+  "application": "com.netease.yhtj",
+  "version": "1.0.580",
+  "architecture": "arm64-v8a",
+  "elf_build_id": "ac027ff823a6f358af1a7c5ddf123946069cd23e",
+  "elf_sha256": "59bfec08df2e79dbc158ad59941a3fb8b20b5ef815e3774675599758290bfd65",
+  "handoff_entry_sha256": {
+    "native-recovered-candidate.json": "6e61fae43546084409708ef38bd4240025ef47ce47d0f5d1a41cd264fac20999",
+    "native-type-universe.json": "7c6e7e0945af1b9ff33eac99d544005366c2761fc9d6ee5cf6d9e31cb729eaa8",
+    "generated/dump.h": "4a5b97b8812d0bd323701568ef2688bdc94fa19e2937acd2ba96adb5b1531a58"
+  },
+  "catalog": {
+    "total_dump_owners": 17032,
+    "rtti_records": 16466,
+    "unique_rtti_names": 16464,
+    "rtti_only_owners": 16085,
+    "reflected_type_records": 928,
+    "reflected_without_members": 292,
+    "base_relations": 13111,
+    "virtual_base_relations": 77,
+    "vtable_groups": 13149,
+    "virtual_slots": 140469
+  },
+  "members": {
+    "named_methods": 1248,
+    "signature_only": 244,
+    "fields": 4279,
+    "properties": 708,
+    "events_total": 203,
+    "event_signatures": 172,
+    "write_all_paths": 314,
+    "write_open": 394
+  },
+  "field_name_sources": {
+    "accessor_derived": 46,
+    "native_reflection": 4233
+  },
+  "enum_values": 738,
+  "python_registry": {
+    "modules": 43,
+    "wrappers": 1443
+  },
+  "original_class_layouts_complete": false,
+  "runtime_verification": "NOT RUN"
+}

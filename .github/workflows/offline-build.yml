@@ -1,0 +1,23 @@
+name: Offline SDK
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the C SDK and offline exporter
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --parallel 2
+      - name: Verify the frozen metadata against the handoff
+        run: |
+          ./build/exporter/messiah_offline_export out
+          echo 'dfb3225716a21aa76121b6a6cd619d6934bb030542effb4cab52aca570342026  out/metadata.json' | sha256sum --check
+      - name: Check the published field-name example
+        run: |
+          c++ -std=c++17 -Isdk examples/field_names.cpp build/liblostlight_dumpsdk.a -o build/field_names
+          ./build/field_names 'Messiah::IEntity' > build/fields.tsv
+          grep -q $'^Transform\tnative_reflection\t' build/fields.tsv
+          grep -q $'^Position\taccessor_derived\t' build/fields.tsv
